@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "e292699b-ac80-40e8-8a8b-74735a506beb",
+		"name": "new",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21530421"
+	},
+	"item": [
+		{
+			"name": "saveTeamMember",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Marquez Garcia\",\r\n      \"Designation\": \"JS Developer\",\r\n      \"Description\": \"Artist is a term applied to a person who engages in an activity deemed to be an art.\",\r\n      \"Image\": \"assets/images/ivana-square.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/saveTeamMember",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"saveTeamMember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTeamMember",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"ID\":\"63d955a06af36d5eaf1348ad\",\r\n      \"Image\": \"team4\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/updateTeamMember",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateTeamMember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTeamMember",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"ID\":\"63d95ee545554887fb4ff780\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/deleteTeamMember",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteTeamMember"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllTeamMember",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/getAllTeamMember",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getAllTeamMember"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

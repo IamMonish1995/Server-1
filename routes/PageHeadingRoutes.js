@@ -21,6 +21,15 @@ const DeleteLogoController = require('../controllers/Logo/DeleteLogoController')
 const getPageHeadingController = require('../controllers/PageHeading/getPageHeadingController');
 const updatePageHeadingController = require('../controllers/PageHeading/updatePageHeadingController');
 const deletePageHeadingController = require('../controllers/PageHeading/deletePageHeadingController');
+const registerController = require('../controllers/user/registerController');
+const loginController = require('../controllers/user/loginController');
+
+// ************************* User *****************************************
+router.post('/register', registerController.registerUser)
+router.post('/login', loginController.loginUser)
+
+
+
 
 
 // *************************TEAM MEMBERS *****************************************
